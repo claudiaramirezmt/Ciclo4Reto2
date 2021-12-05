@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_servicios"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="420dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="264dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/text_servicios"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bananas"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="231dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/idNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Nombre: Bananos"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/idInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="Descripción:Fruta de temporada" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="298dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/text_servicios">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/pera"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="503dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="510dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/idNombre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="98dp"
+            android:text="Nombre: Peras"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idInfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="94dp"
+            android:layout_marginBottom="25dp"
+            android:text="Descripción:Fruta de temporada" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
